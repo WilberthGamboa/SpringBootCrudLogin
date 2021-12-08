@@ -10,5 +10,5 @@ public interface IAnimeService {
     public Optional<Anime>listarId(int id);
     public int save(Anime p);
     public void delete(int id);
-    
+    public List<Anime> findByName(String name);
 }

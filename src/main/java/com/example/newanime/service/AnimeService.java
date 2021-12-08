@@ -42,5 +42,12 @@ public class AnimeService implements IAnimeService {
         data.deleteById(id);
         
     }
+    public Anime get(int id) {
+        return data.findById(id).get();
+    }
+    public List<Anime> findByName(String name) {
+		// TODO Auto-generated method stub
+		return  data.findByNameLike("%"+name+"%");
+	}
     
 }
