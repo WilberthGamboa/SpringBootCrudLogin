@@ -61,8 +61,13 @@ public class Controler {
 		service.delete(id);
 		return "redirect:/";
 	}
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
 
-
+	
+	
 
 	
     
